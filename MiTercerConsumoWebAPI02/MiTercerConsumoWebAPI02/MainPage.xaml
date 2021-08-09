@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTercerConsumoWebAPI02.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+  
+
+      <Button x:Name="btnNuevo" Clicked="BtnNuevo_Clicked" Text="Agregar" BackgroundColor="Green" TextColor="white"/>
+            
+      <ListView x:Name="lsDocotor" ItemSelected="LsDocotor_ItemSelected"/>
+
+    
+   </StackLayout>
+    </ScrollView>
+
+</ContentPage>

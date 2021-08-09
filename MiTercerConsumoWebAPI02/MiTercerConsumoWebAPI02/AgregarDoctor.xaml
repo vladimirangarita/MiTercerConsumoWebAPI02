@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTercerConsumoWebAPI02.AgregarDoctor">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout>
+                <Button Text="Eliminar" x:Name="btnEliminar"
+                        Clicked="btnEliminar_Clicked"
+                        BackgroundColor="Red"
+                        TextColor="White"/>
+                <Image WidthRequest="100" HeightRequest="100"
+                       x:Name="imgFoto"/>
+
+                <Label Text="Id Doctor"/>
+                <Entry x:Name="txtIdDoctor" Text="0" IsReadOnly="True"/>
+
+                <Label Text="Nombre Doctor"/>
+                <Entry x:Name="txtNombre"  />
+
+                <Label Text="Apellido Paterno Doctor"/>
+                <Entry x:Name="txtApPaterno"  />
+
+                <Label Text="Apellido Materno Doctor"/>
+                <Entry x:Name="txtApMaterno"  />
+
+                <Label Text="Clinica"/>
+                <Picker x:Name="cboClinica" />
+
+
+                <Label Text="Especialidad"/>
+                <Picker x:Name="cboEspecialidad" />
+
+                <Label Text="Email"/>
+                <Picker x:Name="txtEmail" />
+
+                <Label Text="Telefono celular"/>
+                <Picker x:Name="txtTelefonoCelular" />
+
+
+                <Label Text="Sexo"/>
+                <Picker x:Name="cboSexo">
+
+                    <Picker.Items>
+                        <x:String>Masculino</x:String>
+                        <x:String>Femenino</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Sueldo"/>
+                <Entry x:Name="txtSueldo" />
+
+                <Label Text="Fecha Contrato"/>
+                <DatePicker x:Name="txtFechaContrato"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnAceptar" Text="Aceptar" Clicked="btnAceptar_Clicked"/>
+                    <Button x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked" />
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+      
+    </ContentPage.Content>
+</ContentPage>
